@@ -1,10 +1,4 @@
-//
-//  Package.swift
-//  Reusable_Authentication
-//
-//  Created by Solulab on 2/11/20.
-//  Copyright © 2020 YogeshPatel. All rights reserved.
-//
+// swift-tools-version:5.1
 
 import PackageDescription
 
