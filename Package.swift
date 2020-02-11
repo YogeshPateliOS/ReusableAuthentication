@@ -4,6 +4,9 @@ import PackageDescription
 
 let package = Package(
     name: "ReusableAuthentication",
+    platforms: [
+        .iOS(.v10)
+    ],
     products: [
         .library(name: "ReusableAuthentication",  targets: ["ReusableAuthentication"])
     ],
@@ -11,4 +14,5 @@ let package = Package(
     targets: [
         .target(name: "ReusableAuthentication", path: "Resources")
     ]
+    swiftLanguageVersions: [.version("5")]
 )
