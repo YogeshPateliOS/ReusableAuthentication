@@ -157,7 +157,7 @@ class customTextfield: UITextField{
             break
         }
         var titleAttributes:[NSAttributedString.Key : Any] = [
-            .foregroundColor: fontColor,
+            .foregroundColor: fontColor ?? .white,
             .kern: letterSpacing,
             .baselineOffset: baseLineOffset,
             .paragraphStyle: paragraphStyle
