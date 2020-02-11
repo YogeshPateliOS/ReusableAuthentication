@@ -49,7 +49,7 @@ class customTextfield: UITextField{
         }
     }
     
-    @IBInspectable public var fontColor: UIColor = .white {
+    @IBInspectable public var fontColor: UIColor? {
         didSet {
             setupDesigns()
         }
@@ -156,7 +156,8 @@ class customTextfield: UITextField{
             paragraphStyle.alignment = .left
             break
         }
-        var titleAttributes:[NSAttributedString.Key : Any] = [            
+        var titleAttributes:[NSAttributedString.Key : Any] = [
+            .foregroundColor: fontColor ?? UIColor.white,
             .kern: letterSpacing,
             .baselineOffset: baseLineOffset,
             .paragraphStyle: paragraphStyle
