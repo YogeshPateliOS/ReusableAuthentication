@@ -7,9 +7,6 @@ let package = Package(
     platforms: [
         .iOS(.v10)
     ],
-    dependencies: [
-        .Package(url: "https://github.com/YogeshPateliOS/ReusableAuthentication.git")
-    ],
     products: [
         .library(name: "ReusableAuthentication",  targets: ["ReusableAuthentication"])
     ],
