@@ -133,7 +133,7 @@ reusableView.textFields.first?.text?.validatePhoneNumber()
 ```
 please check more validations...on `String` extension.
 
-add Your Alert and Actionsheet easily alongwith messages:
+add Your Alert and Actionsheet easily with custom messages:
 ```
 self.openAlert(title: "Alert", message: "Please Validate All Textfields", alertStyle: .alert, actionTitles: ["Okay", "Cancel"], actionStyles: [.default, .cancel], actions: [{_ in }, {_ in }])
 ```
