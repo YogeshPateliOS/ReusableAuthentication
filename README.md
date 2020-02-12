@@ -52,9 +52,11 @@ The simplest use-case is Drag UIView to your UIViewController in Interface and c
 <a href="https://ibb.co/J7Ltjsc"><img src="https://i.ibb.co/nc2mMLw/Screen-Shot-2020-02-12-at-3-29-36-PM.png" alt="Screen-Shot-2020-02-12-at-3-29-36-PM" border="0"></a>
 
 Yeah! Now just bulid and run your project you find 6 Textfields there. right ? Yeah! Next step...
-Create IBOutlet for `ReusableLogin` UIView.
-```@IBOutlet weak var reusableView: ReusableLogin!```
 
+Create IBOutlet for `ReusableLogin` UIView.
+```
+@IBOutlet weak var reusableView: ReusableLogin!
+```
 Now i want 3 textfields then use this:
 ```
 reusableView.numberOfTextfields = 3
