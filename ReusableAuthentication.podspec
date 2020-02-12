@@ -16,6 +16,6 @@ This fantastic view changes its color gradually makes your app look fantastic!
   s.ios.deployment_target = '10.2'
   s.source_files = 'Resources/**/*'
   s.resource_bundles = {
-  '{ReusableAuthentication}' => ['{ReusableAuthentication}/Resources/*.xib']
+  'ReusableAuthentication' => ['ReusableAuthentication/Resources/*.xib']
   }
 end
