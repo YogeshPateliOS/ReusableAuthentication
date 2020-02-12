@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
   s.name             = 'ReusableAuthentication'
   s.swift_versions = ['4.0','4.2', '5.0']
-  s.version          = '0.4.0'
+  s.version          = '0.5.0'
   s.summary          = 'By far the most fantastic view I have seen in my entire life. No joke.'
  
   s.description      = <<-DESC
