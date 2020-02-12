@@ -1,16 +1,53 @@
 # ReusableAuthentication
 ReusableAuthentication is a powerful, pure-Swift library for Reuse Your Login and Signup Page with UI and Validations. It provides you a chance to use a pure-Swift way to work with remote ReusableAuthentication in your next app.
 
+## Installation Guide
+Everything has a beginning. For using a framework, it's installation.
+
+## Versions
+ReusableAuthentication supports from Swift 4 from version 5.0. If you are trying to use ReusableAuthentication with an earlier Swift version, see the [release page](https://github.com/YogeshPateliOS/ReusableAuthentication/releases) to find what you need. We will use the latest version in this guide. But the installation process should be the same for all versions except the version number.
+
+## Installation
+
+### CocoaPods
+CocoaPods is a dependency manager for Cocoa projects. You can install it with the following command:
+```
+$ gem install cocoapods
+```
+
+To integrate ReusableAuthentication into your Xcode project using CocoaPods, specify it to a target in your Podfile:
+```
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '12.0'
+use_frameworks!
+
+target 'MyApp' do
+  # your other pod
+  # ...
+  pod 'ReusableAuthentication', '~> 0.7'
+end
+```
+
+Then, run the following command:
+
+```
+$ pod install
+```
+
+You should open the {Project}.xcworkspace instead of the {Project}.xcodeproj after you installed anything from CocoaPods.
+For more information about how to use CocoaPods, I suggest [this tutorial](https://www.raywenderlich.com/7076593-cocoapods-tutorial-for-swift-getting-started).
+
+
 ## Features
 
 - [x] Reuse UITextfield.
 - [x] Change Color Properties of Textfield: Font-Color, Background-Color, Text-Color.
 - [x] Add Customizable Placeholder text, left-right Image with Padding.
-- [x] Validations: Email, Password, Phonenumber, Character Length Also you can add your regex or validation esaily.  
+- [x] Validations: Email, Password, Phonenumber, Character Length Also you can add your regex or validation easily.  
 - [x] View extensions for `UIString`, `UITextfield` and `UIAlertController` to directly add validations and show alert.
 
 ### ReusableAuthentication
-The simplest use-case is Drag UIView to your UIViewContrller in Interface and click on identity inspector add Custom Class `ReusableLogin`
+The simplest use-case is Drag UIView to your UIViewController in Interface and click on identity inspector add Custom Class `ReusableLogin`
 
 <a href="https://ibb.co/J7Ltjsc"><img src="https://i.ibb.co/nc2mMLw/Screen-Shot-2020-02-12-at-3-29-36-PM.png" alt="Screen-Shot-2020-02-12-at-3-29-36-PM" border="0"></a>
 
@@ -97,6 +134,7 @@ reusableView.textFields.first?.text?.validatePhoneNumber()
 please check more validations...on `String` extension.
 
 add Your Alert and Actionsheet easily with custom messages:
+
 ```
 self.openAlert(title: "Alert", message: "Please Validate All Textfields", alertStyle: .alert, actionTitles: ["Okay", "Cancel"], actionStyles: [.default, .cancel], actions: [{_ in }, {_ in }])
 ```
