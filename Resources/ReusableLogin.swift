@@ -118,6 +118,7 @@ open class ReusableLogin: UIView {
 
    public func commonInit() {
         guard let view = loadViewFromNib() else { return }
+        view.backgroundColor = .clear
         view.frame = self.bounds
         self.addSubview(view)
     }
