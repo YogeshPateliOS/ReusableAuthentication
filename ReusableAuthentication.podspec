@@ -15,5 +15,7 @@ This fantastic view changes its color gradually makes your app look fantastic!
   s.source           = { :git => 'https://github.com/YogeshPateliOS/ReusableAuthentication.git', :tag => s.version }
   s.ios.deployment_target = '10.2'
   s.source_files = 'Resources/**/*'
- 
+  s.resource_bundles = {
+  '{ReusableAuthentication}' => ['{ReusableAuthentication}/Resources/*.xib']
+  }
 end
