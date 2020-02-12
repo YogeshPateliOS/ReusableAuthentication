@@ -1,6 +1,5 @@
 # ReusableAuthentication
 ReusableAuthentication is a powerful, pure-Swift library for Reuse Your Login and Signup Page with UI and Validations. It provides you a chance to use a pure-Swift way to work with remote ReusableAuthentication in your next app.
-## Demo Example
 
 <img src="/art/1.gif?raw=true" width="425"><img src="/art/2.gif?raw=true" width="425">
 
