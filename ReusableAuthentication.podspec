@@ -13,7 +13,8 @@ This fantastic view changes its color gradually makes your app look fantastic!
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Yogesh Patel' => 'yogeshp614@gmail.com' }
   s.source           = { :git => 'https://github.com/YogeshPateliOS/ReusableAuthentication.git', :tag => s.version }
- 
+  s.resource_bundles = {
+'{ReusableAuthentication}' => ['{ReusableAuthentication}/*.xib']
   s.ios.deployment_target = '10.2'
   s.source_files = 'Resources/**/*'
  
