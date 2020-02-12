@@ -18,20 +18,30 @@ Yeah! Now just bulid and run your project you find 6 Textfields there. right ? Y
 ### Create IBOutlet for `ReusableLogin` UIView.
 ```@IBOutlet weak var reusableView: ReusableLogin!```
 
-Now i want 3 textfields then use this
-```reusableView.numberOfTextfields = 3```
+Now i want 3 textfields then use this:
+```
+reusableView.numberOfTextfields = 3
+```
 
-It gives you array UITextfields
-```reusableView.textFields```
+It gives you array UITextfields:
+```
+reusableView.textFields
+```
 
-If you want first textfields
-```reusableView.textFields.first```
+If you want first textfields:
+```
+reusableView.textFields.first
+```
 
-Let's Add Placeholder text and color for our Textfield
-```reusableView.textfieldsPlaceholderAndColors(placeholders: ["Hello Guys", "Reusable Authentication", "My Placeholder"], colors: [.red, .blue, .black])```
+Let's Add Placeholder text and color for our Textfield:
+```
+reusableView.textfieldsPlaceholderAndColors(placeholders: ["Hello Guys", "Reusable Authentication", "My Placeholder"], colors: [.red, .blue, .black])
+```
 
-Same color on all textfield placeholders
-```reusableView.textfieldsPlaceholderWithColor(placeholders: ["Hello Guys", "Reusable Authentication", "My Placeholder"], color: .black)```
+Same color on all textfield placeholders:
+```
+reusableView.textfieldsPlaceholderWithColor(placeholders: ["Hello Guys", "Reusable Authentication", "My Placeholder"], color: .black)
+```
 
 Add Image in Textfield like adding key image in Password
 ```
@@ -41,9 +51,11 @@ reusableView.textFields[1].rightPadding = 8
 ```
 
 same check for 
-```fontName, fontSize,fontColor,customTextAlignment,borderColor,letterSpacing,cornerRadius ,customPlaceholer,horizontalInset,verticalInset,borderWidth,baseLineOffset```
+```
+fontName, fontSize,fontColor,customTextAlignment,borderColor,letterSpacing,cornerRadius ,customPlaceholer,horizontalInset,verticalInset,borderWidth,baseLineOffset
 
-```reusableView.textFields[1].fontSize = 18```
+reusableView.textFields[1].fontSize = 18
+```
 
 ### Validations
 
@@ -58,8 +70,11 @@ Check Length for textfield
 let charLength = reusableView.textFields.first?.text?.validateLength() // default length is mini = 8 and max = 18
 //charlength return Bool 
 ```
+
 add Your custom length for textfield
-```let _ = reusableView.textFields.first?.text?.validateLength(mini: 5, max: 13)```
+```
+let _ = reusableView.textFields.first?.text?.validateLength(mini: 5, max: 13)
+```
 
 add Validation for all textfields and also you can add your custom text message..
 if it not validate then it showing your message with alert..
@@ -72,11 +87,11 @@ reusableView.validations(vc: self, validations: [.email, .password, .phonenumber
 
 Seperate Validation for textfields
 ```
-Email:
+For Email:
 reusableView.textFields.first?.text?.validateEmailId()
-Pass:
+Password:
 reusableView.textFields.first?.text?.validatePassword()
-Phonenumber        
+And Phonenumber        
 reusableView.textFields.first?.text?.validatePhoneNumber()
 ```
 please check more validations...on `String` extension.
