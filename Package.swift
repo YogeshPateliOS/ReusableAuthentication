@@ -12,6 +12,6 @@ let package = Package(
     ],
     targets: [
         .target(name: "ReusableAuthentication", path: "Resources")
-    ]
+    ],
     swiftLanguageVersions: [.version("5")]
 )
