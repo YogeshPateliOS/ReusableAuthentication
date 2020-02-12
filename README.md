@@ -74,12 +74,12 @@ reusableView.textFields.first
 
 Let's Add Placeholder text and color for our Textfield:
 ```
-reusableView.textfieldsPlaceholderAndColors(placeholders: ["Hello Guys", "Reusable Authentication", "My Placeholder"], colors: [.red, .blue, .black])
+reusableView.textfieldsPlaceholderAndColors(placeholders: ["Email", "Password", "Phone number"], colors: [.red, .blue, .black])
 ```
 
 Same color on all textfield placeholders:
 ```
-reusableView.textfieldsPlaceholderWithColor(placeholders: ["Hello Guys", "Reusable Authentication", "My Placeholder"], color: .black)
+reusableView.textfieldsPlaceholderWithColor(placeholders: ["Email", "Password", "Phone number"], color: .black)
 ```
 
 Add Image in Textfield like adding key image in Password
