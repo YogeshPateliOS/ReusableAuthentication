@@ -16,7 +16,7 @@ enum ValidationName: String{
     case isEmpty
 }
 
-class ReusableLogin: UIView {
+public class ReusableLogin: UIView {
 
     //MARK:- OUTLETS
     @IBOutlet weak var stackView: UIStackView!
@@ -31,7 +31,7 @@ class ReusableLogin: UIView {
     private var rightViewPadding: CGFloat!
     var customTextField = customTextfield()
 
-    var numberOfTextfields: Int?{
+   public var numberOfTextfields: Int?{
         willSet{
             if textFields.count > newValue!{
             let _ = Array(newValue!..<textFields.count).map{ textFields[$0].isHidden = true }
@@ -39,7 +39,7 @@ class ReusableLogin: UIView {
         }
     }
 
-    var spacingForTextfields: CGFloat?{
+   public var spacingForTextfields: CGFloat?{
         didSet{
             stackView.spacing = spacing
         }
@@ -49,25 +49,25 @@ class ReusableLogin: UIView {
     }
 
     //MARK:- VOIDMETHODS
-    func textfieldsPlaceholderAndColors(placeholders: [String], colors:[UIColor]){
+   public func textfieldsPlaceholderAndColors(placeholders: [String], colors:[UIColor]){
         let zipArray = Array(zip(placeholders, colors))
         for (index, tuple) in zipArray.enumerated() {
             textFields[index].changeTextfieldPlaceholderColor(tuple.0, placeholder: tuple.1)
         }
     }
 
-    func textfieldsPlaceholderWithColor(placeholders: [String], color: UIColor){
+   public func textfieldsPlaceholderWithColor(placeholders: [String], color: UIColor){
         for (index, placeholder) in placeholders.enumerated(){
         textFields[index].changeTextfieldPlaceholderColor(placeholder, placeholder: color)
         }
     }
 
-    func textfieldsIsEmpty() -> Bool{
+   public func textfieldsIsEmpty() -> Bool{
         let arr = Array(Set(textFields.map{ $0.text == "" || $0.text == nil }))
         return arr.count == 1 ? arr.first! : false
     }
 
-    func validations(vc: UIViewController, validations: [ValidationName], validationMessage: [String], completionHanlder: ((String) -> Void)){
+   public func validations(vc: UIViewController, validations: [ValidationName], validationMessage: [String], completionHanlder: ((String) -> Void)){
         var str = ""
         let zipArray = Array(zip(validations, validationMessage))
         for (index, tuple) in zipArray.enumerated(){
@@ -107,23 +107,23 @@ class ReusableLogin: UIView {
     }
 
     // MARK: - Setup
-    required init?(coder aDecoder: NSCoder) {
+   public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         commonInit()
     }
 
-    override init(frame: CGRect) {
+   public override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
     }
 
-    func commonInit() {
+   public func commonInit() {
         guard let view = loadViewFromNib() else { return }
         view.frame = self.bounds
         self.addSubview(view)
     }
 
-    func loadViewFromNib() -> UIView? {
+  public func loadViewFromNib() -> UIView? {
         let nib = UINib(nibName: nibName, bundle: nil)
         return nib.instantiate(withOwner: self, options: nil).first as? UIView
     }

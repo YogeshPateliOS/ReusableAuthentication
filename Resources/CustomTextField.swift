@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 @IBDesignable
-class customTextfield: UITextField{
+public class customTextfield: UITextField{
     
     @IBInspectable var textfieldLeftImage: UIImage?{
         didSet{
