@@ -47,7 +47,7 @@ extension String{
         applyPredicateOnRegex(regexStr: regexStr)
     }
 
-    func applyPredicateOnRegex(regexStr: String) -> Bool{
+   public func applyPredicateOnRegex(regexStr: String) -> Bool{
         let trimmedString = self.trimmingCharacters(in: .whitespaces)
         let validateOtherString = NSPredicate(format: "SELF MATCHES %@", regexStr)
         let isValidateOtherString = validateOtherString.evaluate(with: trimmedString)

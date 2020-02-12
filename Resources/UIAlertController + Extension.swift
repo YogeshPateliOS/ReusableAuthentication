@@ -13,7 +13,7 @@ extension UIViewController{
 
     // Global Alert
     // Define Your number of buttons, styles and completion
-    func openAlert(title: String,
+   public func openAlert(title: String,
                    message: String,
                    alertStyle:UIAlertController.Style,
                    actionTitles:[String],

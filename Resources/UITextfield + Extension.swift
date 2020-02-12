@@ -11,7 +11,7 @@ import UIKit
 
 //MARK:- EXTENSIONS
 extension UITextField{
-    func changeTextfieldPlaceholderColor(_ placeholderString: String,  placeholder textColor:UIColor){
+   public func changeTextfieldPlaceholderColor(_ placeholderString: String,  placeholder textColor:UIColor){
         self.attributedPlaceholder = NSAttributedString(string: placeholderString, attributes: [.foregroundColor: textColor])
     }
 }

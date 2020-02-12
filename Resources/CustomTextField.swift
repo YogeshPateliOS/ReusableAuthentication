@@ -10,27 +10,27 @@ import Foundation
 import UIKit
 
 @IBDesignable
-public class customTextfield: UITextField{
+open class customTextfield: UITextField{
     
-    @IBInspectable var textfieldLeftImage: UIImage?{
+    @IBInspectable public var textfieldLeftImage: UIImage?{
         didSet{
             addLeftImage()
         }
     }
     
-    @IBInspectable var size: CGFloat = 20{
+    @IBInspectable public var size: CGFloat = 20{
         didSet{
             addLeftImage()
         }
     }
     
-    @IBInspectable var leftPadding: CGFloat = 0{
+    @IBInspectable public var leftPadding: CGFloat = 0{
         didSet{
             addLeftImage()
         }
     }
     
-    @IBInspectable var rightPadding: CGFloat = 0{
+    @IBInspectable public var rightPadding: CGFloat = 0{
         didSet{
             addLeftImage()
         }

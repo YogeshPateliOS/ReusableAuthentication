@@ -8,7 +8,7 @@
 
 import UIKit
 //MARK: - ENUM
-enum ValidationName: String{
+public enum ValidationName: String{
     case email
     case password
     case phonenumber
@@ -16,11 +16,11 @@ enum ValidationName: String{
     case isEmpty
 }
 
-public class ReusableLogin: UIView {
+open class ReusableLogin: UIView {
 
     //MARK:- OUTLETS
-    @IBOutlet weak var stackView: UIStackView!
-    @IBOutlet var textFields: [customTextfield]!
+    @IBOutlet weak public var stackView: UIStackView!
+    @IBOutlet public var textFields: [customTextfield]!
 
     //MARK:- VARIABLES
     private let nibName = "ReusableLogin"
@@ -29,7 +29,6 @@ public class ReusableLogin: UIView {
     private var leftViewSize: CGSize!
     private var leftViewPadding: CGFloat!
     private var rightViewPadding: CGFloat!
-    var customTextField = customTextfield()
 
    public var numberOfTextfields: Int?{
         willSet{
@@ -107,12 +106,12 @@ public class ReusableLogin: UIView {
     }
 
     // MARK: - Setup
-   public required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         commonInit()
     }
 
-   public override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
     }
@@ -124,7 +123,8 @@ public class ReusableLogin: UIView {
     }
 
   public func loadViewFromNib() -> UIView? {
-        let nib = UINib(nibName: nibName, bundle: nil)
+        let bundle = Bundle(for: type(of: self))
+        let nib = UINib(nibName: nibName, bundle: bundle)
         return nib.instantiate(withOwner: self, options: nil).first as? UIView
     }
 
