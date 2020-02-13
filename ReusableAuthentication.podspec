@@ -4,10 +4,15 @@ Pod::Spec.new do |s|
   s.name             = 'ReusableAuthentication'
   s.swift_versions = ['4.0','4.2', '5.0']
   s.version          = '0.7.0'
-  s.summary          = 'By far the most fantastic view I have seen in my entire life. No joke.'
+  s.summary          = 'ReusableAuthentication is a powerful, pure-Swift library for Reuse Your Login and Signup Page with UI and Validations.'
  s.requires_arc = true
   s.description      = <<-DESC
-This fantastic view changes its color gradually makes your app look fantastic!
+                       ReusableAuthentication is a powerful, pure-Swift library for Reuse Your Login and Signup Page with UI and Validations.
+                       * Reuse UITextfield.
+                       * Change Color Properties of Textfield: Font-Color, Background-Color, Text-Color.
+                       * Add Customizable Placeholder text, left-right Image with Padding.
+                       * Validations: Email, Password, Phonenumber, Character Length Also you can add your regex or validation easily.
+                       * View extensions for UIString, UITextfield and UIAlertController to directly add validations and show alert. 
                        DESC
  s.framework = 'UIKit'
 
