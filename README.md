@@ -16,7 +16,7 @@ ReusableAuthentication supports from Swift 4 from version 5.0. If you are trying
 
 ## Caution
 
-From Xcode 11, you can use [Swift Package Manager](https://swift.org/package-manager/) to add Kingfisher to your project.
+From Xcode 11, you can use [Swift Package Manager](https://swift.org/package-manager/) to add ReusableAuthentication to your project.
 
 1. Select File > Swift Packages > Add Package Dependency. Enter https://github.com/YogeshPateliOS/ReusableAuthentication.git in the "Choose Package Repository" dialog.
 
