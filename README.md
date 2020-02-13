@@ -10,8 +10,26 @@ Everything has a beginning. For using a framework, it's installation.
 
 ## Versions
 ReusableAuthentication supports from Swift 4 from version 5.0. If you are trying to use ReusableAuthentication with an earlier Swift version, see the [release page](https://github.com/YogeshPateliOS/ReusableAuthentication/releases) to find what you need. We will use the latest version in this guide. But the installation process should be the same for all versions except the version number.
-
 ## Installation
+
+## Swift Package Manager
+
+## Caution
+
+From Xcode 11, you can use [Swift Package Manager](https://swift.org/package-manager/) to add Kingfisher to your project.
+
+1. Select File > Swift Packages > Add Package Dependency. Enter https://github.com/YogeshPateliOS/ReusableAuthentication.git in the "Choose Package Repository" dialog.
+
+2. In the next page, specify the version resolving rule as "Branch" with "master".
+
+<a href="https://ibb.co/VxD0KBS"><img src="https://i.ibb.co/Qkn75mN/master-branch.png" alt="master-branch" border="0"></a>
+
+3. After Xcode checking out the source and resolving the branch, you can choose the "ReusableAuthentication" library and add it to your app target.
+
+<a href="https://ibb.co/0cqFbkb"><img src="https://i.ibb.co/CzBMGqG/Screen-Shot-2020-02-13-at-12-18-35-PM.png" alt="Screen-Shot-2020-02-13-at-12-18-35-PM" border="0"></a>
+
+If you encounter any problem or have a question on adding package to an Xcode project, I suggest the [Adding Package Dependencies to Your App](https://developer.apple.com/documentation/xcode/adding_package_dependencies_to_your_app) guide article from Apple.
+
 
 ### CocoaPods
 CocoaPods is a dependency manager for Cocoa projects. You can install it with the following command:
