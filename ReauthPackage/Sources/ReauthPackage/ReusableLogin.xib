@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReusableLogin" customModule="UIVIew_Reusable" customModuleProvider="target">
+            <connections>
+                <outlet property="stackView" destination="KPf-Hi-CHc" id="0ZE-ef-Yak"/>
+                <outletCollection property="textFields" destination="qgB-u2-t7Q" collectionClass="NSMutableArray" id="BCF-FM-l1X"/>
+                <outletCollection property="textFields" destination="FGH-xa-TxG" collectionClass="NSMutableArray" id="UKC-Va-iib"/>
+                <outletCollection property="textFields" destination="bXT-Dx-Moe" collectionClass="NSMutableArray" id="AMr-Cc-o5R"/>
+                <outletCollection property="textFields" destination="PA2-xR-1fN" collectionClass="NSMutableArray" id="0ZB-24-zil"/>
+                <outletCollection property="textFields" destination="Wyz-n0-y6E" collectionClass="NSMutableArray" id="sXV-ne-Tfj"/>
+                <outletCollection property="textFields" destination="mfG-ky-nMv" collectionClass="NSMutableArray" id="O6f-qd-bhe"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="299" height="325"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="KPf-Hi-CHc">
+                    <rect key="frame" x="0.0" y="42.5" width="299" height="284"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qgB-u2-t7Q" customClass="customTextfield" customModule="UIVIew_Reusable" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="299" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="2" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FGH-xa-TxG" customClass="customTextfield" customModule="UIVIew_Reusable" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="50" width="299" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="3" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bXT-Dx-Moe" customClass="customTextfield" customModule="UIVIew_Reusable" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="100" width="299" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="4" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PA2-xR-1fN" customClass="customTextfield" customModule="UIVIew_Reusable" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="150" width="299" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="5" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wyz-n0-y6E" customClass="customTextfield" customModule="UIVIew_Reusable" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="200" width="299" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="6" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mfG-ky-nMv" customClass="customTextfield" customModule="UIVIew_Reusable" customModuleProvider="target" propertyAccessControl="all">
+                            <rect key="frame" x="0.0" y="250" width="299" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="KPf-Hi-CHc" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="Jql-SN-t5g"/>
+                <constraint firstItem="KPf-Hi-CHc" firstAttribute="height" relation="lessThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="height" id="VbN-qn-4E0"/>
+                <constraint firstItem="KPf-Hi-CHc" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="dS5-57-EFF"/>
+                <constraint firstItem="KPf-Hi-CHc" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="mRE-d3-Ga2"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-541" y="-40"/>
+        </view>
+    </objects>
+</document>
