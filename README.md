@@ -75,6 +75,10 @@ The simplest use-case is Drag UIView to your UIViewController in Interface and c
 
 Yeah! Now just bulid and run your project you find 6 Textfields there. right ? Yeah! Next step...
 
+```
+import ReusableAuthentication
+```
+
 Create IBOutlet for `ReusableLogin` UIView.
 ```
 @IBOutlet weak var reusableView: ReusableLogin!
