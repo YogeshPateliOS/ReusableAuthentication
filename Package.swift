@@ -1,15 +1,17 @@
-// swift-tools-version:4.2
-// The swift-tools-version declares the minimum version of Swift required to build this package.
+// swift-tools-version:4.0
 
 import PackageDescription
 
 let package = Package(
     name: "ReusableAuthentication",
+    platforms: [
+        .iOS(.v12),
+    ],
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
         .library(
             name: "ReusableAuthentication",
-            targets: ["ReusableAuthentication", "ReusableAuthenticationTests"]),
+            targets: ["ReusableAuthentication"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -24,7 +26,6 @@ let package = Package(
             path: "Resources"),
          .testTarget(
             name: "ReusableAuthenticationTests",
-            dependencies: ["ReusableAuthentication"]
-            path: "Tests"),
+            dependencies: ["ReusableAuthentication"]),
     ]
 )
