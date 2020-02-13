@@ -75,6 +75,7 @@ The simplest use-case is Drag UIView to your UIViewController in Interface and c
 
 Yeah! Now just bulid and run your project you find 6 Textfields there. right ? Yeah! Next step...
 
+First Step Import `ReusableAuthentication` on your swift file where you have to use this.. Like ViewController.swift
 ```
 import ReusableAuthentication
 ```
