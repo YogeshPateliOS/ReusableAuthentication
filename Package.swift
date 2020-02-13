@@ -21,7 +21,7 @@ let package = Package(
         .target(
             name: "ReusableAuthentication",
             dependencies: [],
-            path: "Sources"),
+            path: "Resources"),
         .testTarget(
             name: "ReusableAuthenticationTests",
             dependencies: ["ReusableAuthentication"]),
