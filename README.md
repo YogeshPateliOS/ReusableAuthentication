@@ -109,7 +109,7 @@ lazy var txtEmail: CustomTextfield = {
         return reusableView.textFields[0] OR reusableView.textFields.first!
     }()
 ```
-For accessing fist textfield `Email` no need to write reusableView.textFields[0] just write txtEmail!! 
+For accessing first textfield `Email` no need to write reusableView.textFields[0] just write txtEmail!! 
 
 Let's Add Placeholder text and color for our Textfield:
 ```
