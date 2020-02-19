@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   s.platform = :ios
   s.name             = 'ReusableAuthentication'
   s.swift_versions = ['4.0','4.2', '5.0']
-  s.version          = '0.7.0'
+  s.version          = '0.8.0'
   s.summary          = 'ReusableAuthentication is a powerful, pure-Swift library for Reuse Your Login and Signup Page with UI and Validations.'
   s.requires_arc = true
   s.description      = <<-DESC
@@ -22,7 +22,4 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/YogeshPateliOS/ReusableAuthentication.git', :tag => s.version }
   s.ios.deployment_target = '12.0'
   s.source_files = 'Resources/**/*.{swift}'
-  s.resources = 'Resources/**/*.{xib}'
-
-  
 end
