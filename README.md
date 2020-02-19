@@ -65,7 +65,8 @@ For more information about how to use CocoaPods, I suggest [this tutorial](https
 - [x] Reuse UITextfield.
 - [x] Change Color Properties of Textfield: Font-Color, Background-Color, Text-Color.
 - [x] Add Customizable Placeholder text, Add and Change Position of Textfield Image.
-- [x] Validations: Email, Password, Phonenumber, Character Length Also you can add your regex or validation easily.  
+- [x] Validations: Email, Password, Phonenumber, Character Length Also you can add your regex or validation easily. 
+- [x] Easily add DatePicker birthdate like textfield.
 - [x] View extensions for `UIString`, `UITextfield` and `UIAlertController` to directly add validations and show alert.
 
 ### ReusableAuthentication
@@ -120,6 +121,16 @@ Same color on all textfield placeholders:
 reusableView.textfieldsPlaceholderWithColor(placeholders: ["Email", "Password", "Phone number"], color: .black)
 ```
 
+KeyboardTypes For All Textfields:
+```
+reusableView.textfieldsKeyboardType(keyboardTypes: [.default, .namePhonePad, .numbersAndPunctuation])
+```
+
+Hide Keyboard by touching anywhere:
+```
+self.hideKeyboardWhenTappedAround()
+```
+
 Add Image in Textfield like adding key image in Password
 ```
 reusableView.textFields[1].textfieldLeftImage = UIImage(named: "Your Image Name")
@@ -132,6 +143,13 @@ same check for
 fontName, fontSize,fontColor,customTextAlignment,borderColor,letterSpacing,cornerRadius ,customPlaceholer,horizontalInset,verticalInset,borderWidth,baseLineOffset
 
 reusableView.textFields[1].fontSize = 18
+```
+
+### DatePicker
+textfield. // fine datepicker method like below
+```
+reusableView.textFields[2].openDatePicker() // Default Data style - Medium
+reusableView.textFields[2].openDatePicker(dateFormateStyle: .full)
 ```
 
 ### Validations
