@@ -9,13 +9,13 @@
 import Foundation
 
 extension String{
-
+    
     // Length be 18 characters max and 3 characters minimum, you can always modify.
     public func validateLength(mini: Int = 8, max: Int = 18) ->Bool {
-       let nameRegex = mini > max ? "^\\w{\(mini),}$" : "^\\w{\(mini),\(max)}$"
+        let nameRegex = mini > max ? "^\\w{\(mini),}$" : "^\\w{\(mini),\(max)}$"
         return applyPredicateOnRegex(regexStr: nameRegex)
     }
-
+    
     // + or 00 and 5 to 13 characters
     public func validatePhoneNumber(mini: Int = 5, max: Int = 13) -> Bool {
         var phoneRegex = ""
@@ -26,12 +26,12 @@ extension String{
         }
         return applyPredicateOnRegex(regexStr: phoneRegex)
     }
-
+    
     public func validateEmailId() -> Bool {
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}"
         return applyPredicateOnRegex(regexStr: emailRegEx)
     }
-
+    
     public func validatePassword(mini: Int = 8, max: Int = 8) -> Bool {
         //Minimum 8 characters at least 1 Alphabet and 1 Number:
         var passRegEx = ""
@@ -42,12 +42,12 @@ extension String{
         }
         return applyPredicateOnRegex(regexStr: passRegEx)
     }
-
+    
     public func validateAnyOtherTextField(regexStr: String) -> Bool {
         applyPredicateOnRegex(regexStr: regexStr)
     }
-
-   public func applyPredicateOnRegex(regexStr: String) -> Bool{
+    
+    public func applyPredicateOnRegex(regexStr: String) -> Bool{
         let trimmedString = self.trimmingCharacters(in: .whitespaces)
         let validateOtherString = NSPredicate(format: "SELF MATCHES %@", regexStr)
         let isValidateOtherString = validateOtherString.evaluate(with: trimmedString)

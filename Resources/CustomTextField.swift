@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 @IBDesignable
-open class customTextfield: UITextField{
+open class CustomTextfield: UITextField{
     
     @IBInspectable public var textfieldLeftImage: UIImage?{
         didSet{
@@ -18,7 +18,7 @@ open class customTextfield: UITextField{
         }
     }
     
-    @IBInspectable public var size: CGFloat = 20{
+    @IBInspectable public var leftImagesize: CGFloat = 20{
         didSet{
             addLeftImage()
         }
@@ -127,17 +127,6 @@ open class customTextfield: UITextField{
         }
     }
     
-    
-    /*** more inspectable var can be added **/
-    
-    //    override public func textRect(forBounds bounds: CGRect) -> CGRect {
-    //        return bounds.insetBy(dx: horizontalInset, dy: verticalInset)
-    //    }
-    //
-    //    override public func editingRect(forBounds bounds: CGRect) -> CGRect {
-    //        return bounds.insetBy(dx: horizontalInset, dy: verticalInset)
-    //    }
-    
     func setupDesigns() {
         // Setup border and corner radius
         self.layer.cornerRadius = cornerRadius
@@ -157,7 +146,7 @@ open class customTextfield: UITextField{
             break
         }
         var titleAttributes:[NSAttributedString.Key : Any] = [
-            .foregroundColor: fontColor ?? UIColor.white,
+            .foregroundColor: fontColor ?? UIColor(red: 0, green: 0, blue: 0.0980392, alpha: 0.22),
             .kern: letterSpacing,
             .baselineOffset: baseLineOffset,
             .paragraphStyle: paragraphStyle
@@ -183,11 +172,11 @@ open class customTextfield: UITextField{
     func addLeftImage(){
         if let img = textfieldLeftImage{
             leftViewMode = .always
-            let imgView = UIImageView(frame: CGRect(x: leftPadding, y: 0, width: size, height: size))
+            let imgView = UIImageView(frame: CGRect(x: leftPadding, y: 0, width: leftImagesize, height: leftImagesize))
             imgView.image = textfieldLeftImage
             imgView.image = img
-            let width = leftPadding + size + rightPadding
-            let imgSuperView = UIView(frame: CGRect(x: 0, y: 0, width: width, height: size))
+            let width = leftPadding + leftImagesize + rightPadding
+            let imgSuperView = UIView(frame: CGRect(x: 0, y: 0, width: width, height: leftImagesize))
             imgSuperView.addSubview(imgView)
             leftView = imgSuperView
         }else{
