@@ -86,7 +86,7 @@ Create IBOutlet for `ReusableLogin` UIView.
 ```
 Now i want 3 textfields then use this:
 ```
-  @IBOutlet weak var reusableView: ReusableLogin!
+    @IBOutlet weak var viewHeight: NSLayoutConstraint!
     override func viewDidLoad() {
         super.viewDidLoad()
         reusableView.numberOfTextfields = 3
