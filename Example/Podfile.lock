@@ -1,0 +1,16 @@
+PODS:
+  - ReusableAuthentication (0.7.0)
+
+DEPENDENCIES:
+  - ReusableAuthentication (~> 0.7)
+
+SPEC REPOS:
+  trunk:
+    - ReusableAuthentication
+
+SPEC CHECKSUMS:
+  ReusableAuthentication: f76033e198069b22897e906585a21a74e868a5bd
+
+PODFILE CHECKSUM: b7ba2b380b8f24beb3f4312ae47fce20411af9d2
+
+COCOAPODS: 1.9.0.beta.3

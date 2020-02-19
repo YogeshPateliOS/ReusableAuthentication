@@ -1,0 +1,6 @@
+framework module ReusableAuthentication {
+  umbrella header "ReusableAuthentication-umbrella.h"
+
+  export *
+  module * { export * }
+}

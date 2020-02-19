@@ -1,0 +1,657 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05F8644B23FD02E7006961CC /* UIStackView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F8644723FD00DD006961CC /* UIStackView + Extension.swift */; };
+		05F8644C23FD02FC006961CC /* UIViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F8644523FD00C5006961CC /* UIViewController + Extension.swift */; };
+		05F8644D23FD0302006961CC /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F8644923FD00EC006961CC /* UIView + Extension.swift */; };
+		189C73D47A5BB974A2509BDED1DCCA1A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		19481AF298F0009BB5C3F94FA6FB44C5 /* Pods-reusableView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F579C94E4F5059D343081BDFEB7A46 /* Pods-reusableView-dummy.m */; };
+		2D8406B05FB3A2A8B9A994DD6964404F /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD28A43F6A92DCA78B9D72A04F3D6AB3 /* CustomTextField.swift */; };
+		3521AC530787B2F0368E9709426F09BA /* Pods-reusableView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D208F912202B6D34D16BC00C8C1025D /* Pods-reusableView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3974421A10EB120E1C665B83DB3BC779 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
+		53C62F97590FF4EDFD19F83B61F7956F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		751C613752176B896EA0C15542F40F7E /* ReusableAuthentication-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6257E78C076414329727D1E4D4208337 /* ReusableAuthentication-dummy.m */; };
+		754E644EC54EF44A11F8D612A986B85A /* UITextfield + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E32F3259FE8D2432B55C37EB95C262E /* UITextfield + Extension.swift */; };
+		90D72B1F00F2F6F6DB32C3EF4F78A804 /* String + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C699BD0D1437637B711718049A0B2F37 /* String + Extension.swift */; };
+		9E9C16F56638281EAE20D3C63BEB81C2 /* UIAlertController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485C95551BBEAC845BCAE1275BBEDDEE /* UIAlertController + Extension.swift */; };
+		BF62FCB38D587DFA516BF0CA177D8CAA /* ReusableLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442675F7FF2D985F8B950BCC3A10DBE7 /* ReusableLogin.swift */; };
+		E72C3A3915561F586570053F1203F165 /* ReusableAuthentication-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C03B02C9B2509FE5E0D9BCBDBC875E85 /* ReusableAuthentication-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F0554E2FE7C7464D0F3E60EA7884D8DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 929278F6D359E5A82143EEC659FB8DF0;
+			remoteInfo = ReusableAuthentication;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05F8644523FD00C5006961CC /* UIViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extension.swift"; sourceTree = "<group>"; };
+		05F8644723FD00DD006961CC /* UIStackView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView + Extension.swift"; sourceTree = "<group>"; };
+		05F8644923FD00EC006961CC /* UIView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
+		08F579C94E4F5059D343081BDFEB7A46 /* Pods-reusableView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-reusableView-dummy.m"; sourceTree = "<group>"; };
+		0D208F912202B6D34D16BC00C8C1025D /* Pods-reusableView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-reusableView-umbrella.h"; sourceTree = "<group>"; };
+		171B4ADF52E12C271A87D42A6794F92D /* ReusableAuthentication.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ReusableAuthentication.modulemap; sourceTree = "<group>"; };
+		1F82C47B0F5FFAA1B76B300CFBA0D2B1 /* Pods-reusableView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-reusableView-Info.plist"; sourceTree = "<group>"; };
+		2CC1ED8808632E0B73A50068DF81F8D5 /* Pods_reusableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_reusableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E32F3259FE8D2432B55C37EB95C262E /* UITextfield + Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextfield + Extension.swift"; path = "Resources/UITextfield + Extension.swift"; sourceTree = "<group>"; };
+		312B988EF117AE4DE76A268D970131FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		442675F7FF2D985F8B950BCC3A10DBE7 /* ReusableLogin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReusableLogin.swift; path = Resources/ReusableLogin.swift; sourceTree = "<group>"; };
+		485C95551BBEAC845BCAE1275BBEDDEE /* UIAlertController + Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIAlertController + Extension.swift"; path = "Resources/UIAlertController + Extension.swift"; sourceTree = "<group>"; };
+		4A35149F124DFD3A6B391CC8DAEC863D /* Pods-reusableView-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-reusableView-acknowledgements.plist"; sourceTree = "<group>"; };
+		6257E78C076414329727D1E4D4208337 /* ReusableAuthentication-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ReusableAuthentication-dummy.m"; sourceTree = "<group>"; };
+		66224802720E54BB9A1C1F9F00B29F3C /* Pods-reusableView-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-reusableView-frameworks.sh"; sourceTree = "<group>"; };
+		6D5A736AB1282E87FE89E0DDC891F771 /* ReusableAuthentication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ReusableAuthentication.debug.xcconfig; sourceTree = "<group>"; };
+		79CF509BA25556A421D7513A974526E8 /* Pods-reusableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-reusableView.release.xcconfig"; sourceTree = "<group>"; };
+		92899910A0F918F1811254BB3C905160 /* ReusableAuthentication-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReusableAuthentication-prefix.pch"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A951797B374D37DF43BD484C927B14AE /* Pods-reusableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-reusableView.debug.xcconfig"; sourceTree = "<group>"; };
+		C03B02C9B2509FE5E0D9BCBDBC875E85 /* ReusableAuthentication-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReusableAuthentication-umbrella.h"; sourceTree = "<group>"; };
+		C699BD0D1437637B711718049A0B2F37 /* String + Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String + Extension.swift"; path = "Resources/String + Extension.swift"; sourceTree = "<group>"; };
+		CB23535E1935172F0C61F277852A8ACC /* ReusableAuthentication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReusableAuthentication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D521EB9899D1CC5301389A2C9E7A302F /* Pods-reusableView-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-reusableView-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DBC82E5B4768F3B03324332E64163B4E /* ReusableAuthentication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ReusableAuthentication.release.xcconfig; sourceTree = "<group>"; };
+		DD28A43F6A92DCA78B9D72A04F3D6AB3 /* CustomTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomTextField.swift; path = Resources/CustomTextField.swift; sourceTree = "<group>"; };
+		DD613AFE69A2F0B6BA44B73978C3BDC6 /* ReusableAuthentication-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ReusableAuthentication-Info.plist"; sourceTree = "<group>"; };
+		E05BE726F84A482B52A7C584C85D3914 /* Pods-reusableView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-reusableView.modulemap"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0EFFB8CF82CC17A3B466490911FC5C33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				189C73D47A5BB974A2509BDED1DCCA1A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D83BAED8D9C63A1F79EF2AA082F00593 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53C62F97590FF4EDFD19F83B61F7956F /* Foundation.framework in Frameworks */,
+				3974421A10EB120E1C665B83DB3BC779 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0CC4C9BC3F95F75F2BB425E235E21229 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2CC1ED8808632E0B73A50068DF81F8D5 /* Pods_reusableView.framework */,
+				CB23535E1935172F0C61F277852A8ACC /* ReusableAuthentication.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2983683FD097A93297E2F5D4E382B36 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1F7369D041B7B81A7C1422AA4B127037 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				451ABC55E9D8A0F7BB334AE177E3E7C5 /* Pods-reusableView */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3D8E4FEBB0995A5C22AF31815B856920 /* ReusableAuthentication */ = {
+			isa = PBXGroup;
+			children = (
+				DD28A43F6A92DCA78B9D72A04F3D6AB3 /* CustomTextField.swift */,
+				442675F7FF2D985F8B950BCC3A10DBE7 /* ReusableLogin.swift */,
+				C699BD0D1437637B711718049A0B2F37 /* String + Extension.swift */,
+				485C95551BBEAC845BCAE1275BBEDDEE /* UIAlertController + Extension.swift */,
+				2E32F3259FE8D2432B55C37EB95C262E /* UITextfield + Extension.swift */,
+				05F8644523FD00C5006961CC /* UIViewController + Extension.swift */,
+				05F8644723FD00DD006961CC /* UIStackView + Extension.swift */,
+				05F8644923FD00EC006961CC /* UIView + Extension.swift */,
+				798BB11A28945E8B212FE1743ECDF960 /* Resources */,
+				B1E23D3A25181F634EA81FBB3C5C93E2 /* Support Files */,
+			);
+			path = ReusableAuthentication;
+			sourceTree = "<group>";
+		};
+		451ABC55E9D8A0F7BB334AE177E3E7C5 /* Pods-reusableView */ = {
+			isa = PBXGroup;
+			children = (
+				E05BE726F84A482B52A7C584C85D3914 /* Pods-reusableView.modulemap */,
+				D521EB9899D1CC5301389A2C9E7A302F /* Pods-reusableView-acknowledgements.markdown */,
+				4A35149F124DFD3A6B391CC8DAEC863D /* Pods-reusableView-acknowledgements.plist */,
+				08F579C94E4F5059D343081BDFEB7A46 /* Pods-reusableView-dummy.m */,
+				66224802720E54BB9A1C1F9F00B29F3C /* Pods-reusableView-frameworks.sh */,
+				1F82C47B0F5FFAA1B76B300CFBA0D2B1 /* Pods-reusableView-Info.plist */,
+				0D208F912202B6D34D16BC00C8C1025D /* Pods-reusableView-umbrella.h */,
+				A951797B374D37DF43BD484C927B14AE /* Pods-reusableView.debug.xcconfig */,
+				79CF509BA25556A421D7513A974526E8 /* Pods-reusableView.release.xcconfig */,
+			);
+			name = "Pods-reusableView";
+			path = "Target Support Files/Pods-reusableView";
+			sourceTree = "<group>";
+		};
+		798BB11A28945E8B212FE1743ECDF960 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		9C78D5CDE7BAB86E04ADC3E79C23F497 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3D8E4FEBB0995A5C22AF31815B856920 /* ReusableAuthentication */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B1E23D3A25181F634EA81FBB3C5C93E2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				171B4ADF52E12C271A87D42A6794F92D /* ReusableAuthentication.modulemap */,
+				6257E78C076414329727D1E4D4208337 /* ReusableAuthentication-dummy.m */,
+				DD613AFE69A2F0B6BA44B73978C3BDC6 /* ReusableAuthentication-Info.plist */,
+				92899910A0F918F1811254BB3C905160 /* ReusableAuthentication-prefix.pch */,
+				C03B02C9B2509FE5E0D9BCBDBC875E85 /* ReusableAuthentication-umbrella.h */,
+				6D5A736AB1282E87FE89E0DDC891F771 /* ReusableAuthentication.debug.xcconfig */,
+				DBC82E5B4768F3B03324332E64163B4E /* ReusableAuthentication.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ReusableAuthentication";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				9C78D5CDE7BAB86E04ADC3E79C23F497 /* Pods */,
+				0CC4C9BC3F95F75F2BB425E235E21229 /* Products */,
+				1F7369D041B7B81A7C1422AA4B127037 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E2983683FD097A93297E2F5D4E382B36 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */,
+				312B988EF117AE4DE76A268D970131FE /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		424AC7585AD290FFDFA0BF1B518359D2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3521AC530787B2F0368E9709426F09BA /* Pods-reusableView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E505F9246F87C257982391B5CF0C8178 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E72C3A3915561F586570053F1203F165 /* ReusableAuthentication-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		12DECEE5197121DDFC5AA4738387E8D4 /* Pods-reusableView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 635B75933FF1EC8A1C06914B61CBA0FF /* Build configuration list for PBXNativeTarget "Pods-reusableView" */;
+			buildPhases = (
+				424AC7585AD290FFDFA0BF1B518359D2 /* Headers */,
+				07D7A3D69E903271AF80615239ACFF39 /* Sources */,
+				0EFFB8CF82CC17A3B466490911FC5C33 /* Frameworks */,
+				FCFF5A48A1A9731BBAA4A57AD8FC4319 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1D6437D04DD9F6F13DC216CEAC462910 /* PBXTargetDependency */,
+			);
+			name = "Pods-reusableView";
+			productName = "Pods-reusableView";
+			productReference = 2CC1ED8808632E0B73A50068DF81F8D5 /* Pods_reusableView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		929278F6D359E5A82143EEC659FB8DF0 /* ReusableAuthentication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5606B5110A9F4A9502D42CE6BD60C3B /* Build configuration list for PBXNativeTarget "ReusableAuthentication" */;
+			buildPhases = (
+				E505F9246F87C257982391B5CF0C8178 /* Headers */,
+				CE8E4298006805FFAFDDB1A1CF7C0811 /* Sources */,
+				D83BAED8D9C63A1F79EF2AA082F00593 /* Frameworks */,
+				ACA1B1E522E0250004EF65F1105B9F36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReusableAuthentication;
+			productName = ReusableAuthentication;
+			productReference = CB23535E1935172F0C61F277852A8ACC /* ReusableAuthentication.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					12DECEE5197121DDFC5AA4738387E8D4 = {
+						LastSwiftMigration = 1130;
+					};
+				};
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 0CC4C9BC3F95F75F2BB425E235E21229 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				12DECEE5197121DDFC5AA4738387E8D4 /* Pods-reusableView */,
+				929278F6D359E5A82143EEC659FB8DF0 /* ReusableAuthentication */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ACA1B1E522E0250004EF65F1105B9F36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCFF5A48A1A9731BBAA4A57AD8FC4319 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07D7A3D69E903271AF80615239ACFF39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19481AF298F0009BB5C3F94FA6FB44C5 /* Pods-reusableView-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE8E4298006805FFAFDDB1A1CF7C0811 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D8406B05FB3A2A8B9A994DD6964404F /* CustomTextField.swift in Sources */,
+				05F8644B23FD02E7006961CC /* UIStackView + Extension.swift in Sources */,
+				05F8644C23FD02FC006961CC /* UIViewController + Extension.swift in Sources */,
+				751C613752176B896EA0C15542F40F7E /* ReusableAuthentication-dummy.m in Sources */,
+				BF62FCB38D587DFA516BF0CA177D8CAA /* ReusableLogin.swift in Sources */,
+				90D72B1F00F2F6F6DB32C3EF4F78A804 /* String + Extension.swift in Sources */,
+				9E9C16F56638281EAE20D3C63BEB81C2 /* UIAlertController + Extension.swift in Sources */,
+				754E644EC54EF44A11F8D612A986B85A /* UITextfield + Extension.swift in Sources */,
+				05F8644D23FD0302006961CC /* UIView + Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1D6437D04DD9F6F13DC216CEAC462910 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ReusableAuthentication;
+			target = 929278F6D359E5A82143EEC659FB8DF0 /* ReusableAuthentication */;
+			targetProxy = F0554E2FE7C7464D0F3E60EA7884D8DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		565D86764BAEE29C6FD44B07A1437275 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBC82E5B4768F3B03324332E64163B4E /* ReusableAuthentication.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ReusableAuthentication/ReusableAuthentication-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ReusableAuthentication/ReusableAuthentication-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ReusableAuthentication/ReusableAuthentication.modulemap";
+				PRODUCT_MODULE_NAME = ReusableAuthentication;
+				PRODUCT_NAME = ReusableAuthentication;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5BC00D543F927BD10B3646172B4F3CB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79CF509BA25556A421D7513A974526E8 /* Pods-reusableView.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-reusableView/Pods-reusableView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-reusableView/Pods-reusableView.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		939F1A8F6BCEB7F9F64D9EEE50CAE014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		E600338B5A9C95D55C65B816EEB64CBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A951797B374D37DF43BD484C927B14AE /* Pods-reusableView.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-reusableView/Pods-reusableView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-reusableView/Pods-reusableView.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ECB437504DF805BD96CAABF97400B526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		F0DD8FCEF4C112D223291475E8252EC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D5A736AB1282E87FE89E0DDC891F771 /* ReusableAuthentication.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ReusableAuthentication/ReusableAuthentication-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ReusableAuthentication/ReusableAuthentication-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ReusableAuthentication/ReusableAuthentication.modulemap";
+				PRODUCT_MODULE_NAME = ReusableAuthentication;
+				PRODUCT_NAME = ReusableAuthentication;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				939F1A8F6BCEB7F9F64D9EEE50CAE014 /* Debug */,
+				ECB437504DF805BD96CAABF97400B526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		635B75933FF1EC8A1C06914B61CBA0FF /* Build configuration list for PBXNativeTarget "Pods-reusableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E600338B5A9C95D55C65B816EEB64CBE /* Debug */,
+				5BC00D543F927BD10B3646172B4F3CB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5606B5110A9F4A9502D42CE6BD60C3B /* Build configuration list for PBXNativeTarget "ReusableAuthentication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0DD8FCEF4C112D223291475E8252EC9 /* Debug */,
+				565D86764BAEE29C6FD44B07A1437275 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
