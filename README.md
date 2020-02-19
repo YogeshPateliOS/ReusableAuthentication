@@ -46,7 +46,7 @@ use_frameworks!
 target 'MyApp' do
   # your other pod
   # ...
-  pod 'ReusableAuthentication', '~> 0.7'
+  pod 'ReusableAuthentication', '~> 0.8'
 end
 ```
 
