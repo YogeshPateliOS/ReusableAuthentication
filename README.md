@@ -64,7 +64,7 @@ For more information about how to use CocoaPods, I suggest [this tutorial](https
 
 - [x] Reuse UITextfield.
 - [x] Change Color Properties of Textfield: Font-Color, Background-Color, Text-Color.
-- [x] Add Customizable Placeholder text, left-right Image with Padding.
+- [x] Add Customizable Placeholder text, Add and Change Position of Textfield Image.
 - [x] Validations: Email, Password, Phonenumber, Character Length Also you can add your regex or validation easily.  
 - [x] View extensions for `UIString`, `UITextfield` and `UIAlertController` to directly add validations and show alert.
 
@@ -86,7 +86,14 @@ Create IBOutlet for `ReusableLogin` UIView.
 ```
 Now i want 3 textfields then use this:
 ```
-reusableView.numberOfTextfields = 3
+  @IBOutlet weak var reusableView: ReusableLogin!
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        reusableView.numberOfTextfields = 3
+        reusableView.textFieldHeight = 50
+        reusableView.spacingForTextfields = 8
+        viewHeight.constant = reusableView.stackView.bounds.height // Height Constrain of your reusableView, Give this height to stackview height so it looks proper.
+    }
 ```
 
 It gives you array UITextfields:
@@ -97,7 +104,11 @@ reusableView.textFields
 If you want first textfields:
 ```
 reusableView.textFields.first
+lazy var txtEmail: CustomTextfield = {
+        return reusableView.textFields[0] OR reusableView.textFields.first!
+    }()
 ```
+For accessing fist textfield `Email` no need to write reusableView.textFields[0] just write txtEmail!! 
 
 Let's Add Placeholder text and color for our Textfield:
 ```
